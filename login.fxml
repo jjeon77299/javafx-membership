@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <left>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@sungil-login-left.jpg" />
+         </image>
+      </ImageView>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="412.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="149.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sungil-login-key.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="adminCheckBox" layoutX="307.0" layoutY="192.0" mnemonicParsing="false" onAction="#adminCheckBoxOnAction" text="관리자" />
+            <Label alignment="CENTER" layoutX="38.0" layoutY="220.0" text="사용자 아이디" />
+            <TextField fx:id="useridTextField" layoutX="134.0" layoutY="215.0" prefHeight="24.0" prefWidth="230.0" promptText="사용자 아이디를 입력해주세요" />
+            <Label alignment="CENTER" layoutX="38.0" layoutY="255.0" text="사용자 암호" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="134.0" layoutY="251.0" prefHeight="24.0" prefWidth="230.0" promptText="사용자 암호를 입력해주세요" />
+            <Button fx:id="loginButton" layoutX="46.0" layoutY="287.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color: #304dff;" text="로그인" textFill="WHITE" />
+            <Button fx:id="registrationButton" layoutX="201.0" layoutY="287.0" mnemonicParsing="false" onAction="#registrationButtonOnAction" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color: #304dff;" text="회원가입" textFill="WHITE" />
+            <Button fx:id="cancelButton" layoutX="46.0" layoutY="334.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: #304dff;" text="취소" textFill="WHITE" />
+            <Button fx:id="closeButton" layoutX="201.0" layoutY="334.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: #304dff;" text="창닫기" textFill="WHITE" />
+            <Label fx:id="loginMessageLable" alignment="CENTER" layoutX="41.0" layoutY="165.0" prefHeight="16.0" prefWidth="308.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

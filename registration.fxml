@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegistrationController">
+   <top>
+      <AnchorPane prefHeight="84.0" prefWidth="600.0" style="-fx-background-color: #ccd3ff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="108.0" fitWidth="237.0" layoutX="246.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sungil-registration.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="90.0" layoutY="54.0" text="이름" />
+            <Label layoutX="84.0" layoutY="84.0" text="아이디" />
+            <Label layoutX="90.0" layoutY="114.0" text="암호" />
+            <Label layoutX="77.0" layoutY="142.0" text="암호 확인" />
+            <Label layoutX="119.0" layoutY="179.0" text="학년" />
+            <Label layoutX="257.0" layoutY="179.0" text="반" />
+            <Label layoutX="385.0" layoutY="179.0" text="번호" />
+            <TextField fx:id="usernameTextField" layoutX="162.0" layoutY="50.0" prefHeight="24.0" prefWidth="374.0" promptText="이름을 입력해주세요" />
+            <TextField fx:id="useridTextField" layoutX="162.0" layoutY="80.0" prefHeight="24.0" prefWidth="374.0" promptText="아이디를 입력해주세요" />
+            <PasswordField fx:id="password1PasswordField" layoutX="162.0" layoutY="110.0" prefHeight="24.0" prefWidth="374.0" promptText="암호를 입력해주세요" />
+            <PasswordField fx:id="password2PasswordField" layoutX="162.0" layoutY="138.0" prefHeight="24.0" prefWidth="374.0" promptText="암호를 다시 입력해주세요" />
+            <TextField fx:id="hakTextField" layoutX="155.0" layoutY="175.0" prefHeight="24.0" prefWidth="63.0" promptText="학년" />
+            <TextField fx:id="banTextField" layoutX="289.0" layoutY="175.0" prefHeight="24.0" prefWidth="63.0" promptText="반" />
+            <TextField fx:id="bunTextField" layoutX="418.0" layoutY="175.0" prefHeight="24.0" prefWidth="63.0" promptText="번호" />
+            <Button fx:id="submitButton" layoutX="76.0" layoutY="220.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="53.0" prefWidth="358.0" style="-fx-background-color: #304dff;" text="회원가입하기" textFill="WHITE" />
+            <Button fx:id="cancelButton" layoutX="436.0" layoutY="220.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="53.0" prefWidth="53.0" style="-fx-background-color: #304dff;" text="취소" textFill="WHITE" />
+            <Button fx:id="closeButton" layoutX="491.0" layoutY="220.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="53.0" prefWidth="53.0" style="-fx-background-color: #304dff;" text="창닫기" textFill="WHITE" />
+            <Label fx:id="registerMessageLable" alignment="CENTER" layoutX="90.0" layoutY="20.0" prefHeight="16.0" prefWidth="446.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
